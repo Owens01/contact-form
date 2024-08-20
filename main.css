@@ -1,0 +1,177 @@
+body{
+    background-color: #207015;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact__page{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-label{
+    color: #14492c;
+    font-size: 1.5rem;
+    padding: 15px 0 15px 15px;
+    margin: 0%;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 10px;
+    padding: 2px 15px;
+}
+
+.first-name_container {
+    display: grid;
+    gap: 5px;
+}
+
+.last-name_container {
+    display: grid;
+    gap: 5px;
+}
+
+.contact-form input:not([type="checkbox"]) {
+    border: 1px solid #d8d5d5;
+    border-radius: 10px/20px;
+    height: 4vh;
+    /* width: 100%; */
+    outline: none;
+}
+
+.contact-form input:hover,
+.contact-form input:active {
+    background-color: #cdfac7;
+    border-color: #0b853e;
+    outline: #cdfac7;
+}
+
+input::placeholder {
+    color: #d8d5d583;
+    padding-left: 1rem;
+}
+
+input:not(:focus):invalid {
+    color: #ff000081;
+    border: 1px solid #ff000081;
+}
+
+.email-container {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    grid-template-rows: 1fr ;
+    row-gap: 5px;
+}
+
+.email-container input {
+    grid-column: 1 / -1;
+    grid-row: 2 / span;
+}
+
+.email-container label {
+    grid-column: 1 ;
+    grid-row: 1;
+}
+
+.error {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: end;
+    font-size: .68rem;
+    color: #ff000081;
+    display: none;
+}
+
+.email-container > :not(:focus):invalid + .error{
+   display: block;
+}
+
+.query-type {
+    display: grid;
+    gap: 5px;
+}
+
+.checkbox-container {
+    display: grid;
+    gap: 5px;
+}
+
+.checkbox{
+    border: 1px solid #d8d5d5;
+    border-radius: 10px/20px;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#query__checkbox{
+    border: 1px solid #bdafaf;
+    border-radius: 10px;
+    margin: 0 0 0 25px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+#query__checkbox:checked{
+    background-color: #cdfac7;
+    border-color: #0b853e; 
+}
+
+#enquirys{
+    padding: 0 0 0 10px;
+}
+
+#message{
+    border: 1px solid #bdafaf;
+    border-radius: 8px;
+}
+
+.button-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.submit-button{
+    background-color: #0b853e;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #0b853e;
+    border-radius: 10px/20px;
+}
+
+@media(min-width: 1200px) {
+
+    .contact__page {
+        max-width: 615px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .names-container {
+        display: flex;
+        gap: 142px;
+    }
+    
+    .names {
+        width: 150%;
+    }
+
+    .checkbox-container {
+        display: flex;
+    }
+
+    .checkbox {
+        width: 150%;
+    }
+
+    .checkbox {
+        padding: 8px 0;
+    }
+}

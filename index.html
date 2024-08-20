@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Contact Form</title>
+
+</head>
+<body>
+    <main class="contact__page">
+        <h3 class="contact-label">Contact Us</h3>
+        
+            <form class="contact-form">
+                <div class="names-container">
+                    <div class="first-name_container">
+                        <label for="fname">First Name *</label>
+                        <input type="text" class="first-name names" placeholder="agunwa">
+                    </div>
+                    <div class="last-name_container">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" class="last_name names" placeholder="owen">
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label for="email">Email Address *</label>
+                    <input type="email" class="email" placeholder="agunwaowen@gmail.com">
+                    <span class="error">invaild email address</span>
+                </div>
+                <div class="query-type">
+                    <label for="qtype">Query Type *</label>
+                    <div class="checkbox-container">
+                        <div class="checkbox" id="checkbox-div__1">
+                            <input type="checkbox" id="query__checkbox" ><label for="general" id="enquirys">General Enquiry</label>
+                        </div>
+                        <div class="checkbox" id="checkbox-div__2">
+                            <input type="checkbox" id="query__checkbox"><label for="support" id="enquirys">Support Request</label>
+                        </div>
+                    </div>
+                </div>
+                <label for="message">Message *</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="button-container">
+                    <div class="agree-term">
+                        <input type="checkbox" id="agree-term__checkbox">
+                        <label for="agree-term"> I consent to being contacted by the team *</label>
+                    </div>
+                    <button class="submit-button">Submit</button>
+                </div>
+            </form>
+    
+    </main>
+</body>
+</html>
